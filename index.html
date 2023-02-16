@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    
+h1{
+    font-family: jost;
+    letter-spacing: 1px;
+
+}
+.Firstname{
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+.Lastname{
+    display: inline-block;
+    margin: 10px 0 0 20px;
+}
+.Username{
+    display: block;
+    margin: 10px 0 0 10px;
+    
+}
+.pass{
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+.cpass{
+    display: inline-block;
+    margin: 10px 0 0 20px;
+}
+
+fieldset{
+    margin-right: 50px;
+    margin-left: 40px;
+    
+}
+form{
+    
+    background-image: url(https://swall.teahub.io/photos/small/282-2820540_background-image-for-html-page.jpg);
+}
+button{
+    text-align: centre;
+    text-decoration:solid;
+    align-items: center;
+    margin-left: 200px;
+    background-color: rgb(19, 89, 1);
+    padding: 1px 16px 1px 15px;
+
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<fieldset>
+<body>
+    <form>
+    <img src="Google.png.png" alt="Image" height="100px">
+    <h1> Create your Google Account </h1>
+    <div class="Firstname">
+    <input type="text" placeholder=" First Name " required>
+    </div>
+    <div class="Lastname">
+    <input type="text" placeholder="Last Name" required>
+    </div>
+    <br>
+    <br>
+    <div class="Username">
+    <input type="text" placeholder="User name      @gmail.com" required pattern="(?=.*\d)(?=.*[@])" title="You can use letters, numbers & periods">
+    </div>
+    <br>
+    <a href="" class="line2"> Use my current email address instead</a>
+    <br> <br>
+    <div class="pass">
+    <input type="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*!]){8,}" title="Password must contain atleast one number, atleast one special character, lower and uppercase and it should be atleast 8 or greater characters">
+    </div>
+    <div class="cpass">
+    <input type="password" placeholder="Confirm password" required>
+    </div>
+    <br>
+    <a target="_blank" href="https://accounts.google.com/"> Sign-In Instead </a>
+    <br>
+    <button class="button"> submit </button>
+    
+    </form>
+</body>
+</fieldset>
+</html>
